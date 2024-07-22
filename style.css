@@ -51,6 +51,7 @@ body{
 .pattern-divider img{
     padding: 16px 0;
     display: none;
+    margin-bottom: 8px;
 }
 
 .dice-container{
@@ -74,7 +75,8 @@ body{
     display: none;
     color: #D4E1EB;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
+    padding: 10px
 }
 
 footer{
@@ -90,6 +92,7 @@ footer a{
 @media (max-width:560px) {
     .advice-container{
         max-width: 444px;
+        padding-top: 4px;
     }
 
     .advice{
@@ -100,18 +103,22 @@ footer a{
 
     .pattern-divider img{
         width: 95%;
-        margin: 0 auto;
+        margin: 0 auto 6px;
         padding: 12px 0;
     }
     
     footer{
         font-size: 12px;
     }
+
+    .initial-dice-roll{
+        font-size: 16px;
+    }
 }
 
 @media (max-width:444px) {
     .advice-container{
-        padding: 16px; 
+        padding: 4px 16px 16px; 
     }
 
     .advice{
