@@ -10,13 +10,14 @@ const cachedAdvice = JSON.parse(localStorage.getItem('cachedAdvice')) || {}
 
 rollDice.addEventListener('click', () => {
 
-    initialMessage.style.display = 'none'
-    adviceLabel.style.display = 'block'
-    patternDivider.style.display = 'block'
 
     fetch('https://api.adviceslip.com/advice')
         .then((response) => response.json())
         .then((data) => {
+
+            initialMessage.style.display = 'none'
+            adviceLabel.style.display = 'block'
+            patternDivider.style.display = 'block'
 
             adviceNumber.innerText = `#${data.slip.id}`
             advice.innerText = data.slip.advice
