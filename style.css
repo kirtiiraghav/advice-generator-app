@@ -95,6 +95,11 @@ footer a{
         padding-top: 4px;
     }
 
+    .advice-label{
+        width: 100%;
+        padding-top: 10px;
+    }
+
     .advice{
         font-size: 20px;
         /* padding: 0 21px 16px; */
@@ -117,12 +122,22 @@ footer a{
 }
 
 @media (max-width:444px) {
+
+    body{
+        min-height: 92vh;
+    }
+
     .advice-container{
         padding: 4px 16px 16px; 
     }
 
     .advice{
         padding-bottom: 10px;
+    }
+
+    .advice-label{
+        width: 100%;
+        padding-top: 10px;
     }
 
     .pattern-divider img{
@@ -132,5 +147,13 @@ footer a{
     .dice-container{
         height: 45px;
         width: 45px;
+    }
+
+    .initial-dice-roll{
+        padding-bottom: 10px;
+    }
+
+    footer{
+        bottom:4px;
     }
 }
